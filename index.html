@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimerParcial</title>
+    <style>
+        header {
+          background-color: #1E6C02; /* Color de fondo del encabezado */
+          color: #fff;; /* Color de texto del encabezado */
+          display: flex;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+          height: 100px; /* Ajusta la altura según sea necesario */
+          width: 100%;
+          padding: 8px 0px;
+        }
+      
+        /* Estilo para el pie de página */
+        footer {
+          width: 100%;
+          background-color: #C90707; /* Color de fondo del pie de página */
+          display: flex;
+          bottom: 0;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+          height: 100px; /* Ajusta la altura del pie de página según sea necesario */
+          padding: 8px 0px;
+        }
+      
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 0;
+          height: 100vh;
+        }
+      
+        main {
+          flex: 1; /* Hace que el área principal (main) ocupe todo el espacio restante */
+          display: flex;
+          justify-content: center; /* Centra horizontalmente el contenido */
+          align-items: center; /* Centra verticalmente el contenido */
+        }
+      
+        .contenedor {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+          /* flex-wrap: wrap; Permite que los elementos se envuelvan a una nueva línea si no caben en la misma fila */
+          gap: 44px; /* Espacio entre los elementos */
+          max-width: 1220px;
+          padding: 64px 32px;
+          flex-wrap: wrap;
+        }
+      
+        .imagen {
+          max-width: 400px; /* Tamaño máximo de la imagen */
+          height: auto; /* Altura automática */
+          border-radius: 30px; /* Radio de las esquinas para redondear */
+          min-width: none;
+          width: 100%;
+        }
+      
+        .texto-lista {
+          font-size: 24px; /* Tamaño de fuente del texto */
+          list-style: none; /* Elimina los estilos de lista predeterminados */
+          line-height: 1;
+          margin: 0; /* Elimina el margen predeterminado de la lista */
+          padding: 0; /* Elimina el relleno predeterminado de la lista */
+          font-family: 'Knewave', cursive; 
+          color: #5f0404;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 8px 0;
+          min-width: 0;
+          min-width: 375px;
+        }
+
+        .texto-lista a {
+          white-space: wrap;
+          line-break: anywhere;
+        }
+      
+        .texto-lista li {
+          margin-bottom: 10px;
+        }
+      
+        h1 {
+          font-size: 50px; /* Tamaño de la fuente del h1 */
+          font-family: Arial, sans-serif; /* Cambiar la fuente del h1 */
+          margin: 0; /* Eliminar el margen del h1 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diseño y Desarrollo Web</h1>
+    </header> 
+    <main>
+        <div class="contenedor">
+            <div class="imagen-contenedor">
+              <img src="img/carnet.jpeg" alt="carnet" class="imagen">
+            </div>
+            <ul class="texto-lista">
+                <li><strong>Nombre y Apellido:</strong> Martin Zandoli</li>
+                <li><strong>Carrera:</strong> Licenciatura en Gestión de la Tecnología de la Información</li>
+                <li><strong>Curso:</strong> 13617</li>
+                <li><strong>Proyecto:</strong> Sitio profesional: Proyecto Punta Gorda</li>
+                <li><strong>Descripción:</strong> Punta Gorda es una empresa familiar que fabrica productos artesanales.</li>
+                <li><strong>Prototipo:</strong> <a href="https://www.figma.com/file/rSHRs2GohzSoZOaYqiXsHO/ProyectoPuntaGorda">https://www.figma.com/file/rSHRs2GohzSoZOaYqiXsHO/ProyectoPuntaGorda</a></li>
+                <li><strong>Sitio:</strong> <a href="https://martingzandoli.github.io/ProyectoPuntaGorda/">https://martingzandoli.github.io/ProyectoPuntaGorda/</a></li>
+                <li><strong>Repositorio:</strong> <a href="https://github.com/MartinGZandoli/ProyectoPuntaGorda">https://github.com/MartinGZandoli/ProyectoPuntaGorda</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <img src="img/Looo_UADE.svg" alt="UADE" style="max-width: 200px;">
+    </footer>
+</body>
+</html>
